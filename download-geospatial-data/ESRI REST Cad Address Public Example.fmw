@@ -1,0 +1,1099 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    /Library/FME/2016.1/fme "/Users/keithmoss/Desktop/Current/SLIP/WFS Issues/ESRI REST Cad Address Public Example.fmw"
+#          --SourceDataset_ARCGISFEATURES "https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer"
+#          --SourceDataset_ARCGISFEATURES_7 "https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer"
+#          --SourceDataset_ARCGISFEATURES_6 "https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer"
+#    
+#    
+#!   BEGIN_TCL=""
+#!   FME_SERVER_SERVICES=""
+#!   END_TCL=""
+#!   BEGIN_PYTHON=""
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   LEGAL_TERMS_CONDITIONS=""
+#!   MAX_LOG_FEATURES="200"
+#!   TITLE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   FME_DOCUMENT_GUID="20bb09ce-66d4-11e7-8df7-60030891e650"
+#!   SOURCE_ROUTING_FILE=""
+#!   END_PYTHON=""
+#!   PASSWORD=""
+#!   SHOW_ANNOTATIONS="true"
+#!   LAST_SAVE_DATE="2017-07-12T17:52:28"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_TOP_LEFT="235.502 -2434.02"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   DOC_EXTENTS="2359.53 2382.02"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   SOURCE="NONE"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   REQUIREMENTS_KEYWORD=""
+#!   LAST_SAVE_BUILD="FME(R) 2016.1.3.1 (20161207 - Build 16716 - macosx)"
+#!   USAGE=""
+#!   FME_DOCUMENT_PRIORGUID="57f88b8a-66cc-11e7-8df7-60030891e650,62d10c88-66ce-11e7-8df7-60030891e650,5f420d64-66cf-11e7-8df7-60030891e650,bd013188-66d3-11e7-8df7-60030891e650,ecfba7b0-66d3-11e7-8df7-60030891e650"
+#!   WORKSPACE_VERSION="1"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   LOG_FILE=""
+#!   FME_BUILD_NUM="16716"
+#!   PYTHON_COMPATIBILITY="27"
+#!   CATEGORY=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   DESTINATION="NONE"
+#!   SHOW_INFO_NODES="true"
+#!   ZOOM_SCALE="100"
+#!   TERMINATE_REJECTED="YES"
+#!   REQUIREMENTS=""
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   DESCRIPTION=""
+#!   VIEW_POSITION="-132.001 162.002"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ARCGISFEATURES"
+#!   DATASET="$(SourceDataset_ARCGISFEATURES)"
+#!   KEYWORD="ARCGISFEATURES_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="arcgisonline_type {FME_GEN_GEOMETRY} arcgisonline_sql_where_clause &quot;&quot; arcgisonline_input_geometry &quot;&quot; arcgisonline_input_geometry_type esriGeometryEnvelope arcgisonline_spatial_relationship esriSpatialRelIntersects arcgisonline_distance &quot;&quot; arcgisonline_units esriSRUnit_Meter"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle esriFieldTypeDouble multi_reader_type esriFieldTypeString(50) fme_text_string esriFieldTypeString(50) multi_reader_full_id esriFieldTypeInteger fme_fill_color esriFieldTypeString(50) fme_primary_axis esriFieldTypeDouble fme_basename esriFieldTypeString(50) fme_dataset esriFieldTypeString(50) fme_color esriFieldTypeString(50) fme_type esriFieldTypeString(50) fme_geometry fme_char(50) multi_reader_id esriFieldTypeInteger fme_secondary_axis esriFieldTypeDouble fme_text_size esriFieldTypeDouble multi_reader_keyword esriFieldTypeString(50) fme_start_angle esriFieldTypeDouble fme_feature_type esriFieldTypeString(50) fme_rotation esriFieldTypeDouble arcgisonline_type esriFieldTypeString(254)"
+#!   DEFLINE_PARMS="&quot;GUI NAMEDGROUP arcgisonline_reader_group arcgisonline_sql_where_clause%arcgisonline_input_geometry%arcgisonline_input_geometry_type%arcgisonline_spatial_relationship%arcgisonline_distance%arcgisonline_units Layer Settings&quot; &quot;&quot; &quot;GUI OPTIONAL STRING_ENCODED arcgisonline_sql_where_clause WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL STRING_ENCODED arcgisonline_input_geometry Input Geometry&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_input_geometry_type Envelope,esriGeometryEnvelope%Point,esriGeometryPoint%Polyline,esriGeometryPolyline%Polygon,esriGeometryPolygon%Multipoint,esriGeometryMultipoint Input Geometry Type&quot; esriGeometryEnvelope &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_spatial_relationship Intersects,esriSpatialRelIntersects%Contains,esriSpatialRelContains%Crosses,esriSpatialRelCrosses%Envelope&lt;space&gt;Intersects,esriSpatialRelEnvelopeIntersects%Index&lt;space&gt;Intersects,esriSpatialRelIndexIntersects%Overlaps,esriSpatialRelOverlaps%Touches,esriSpatialRelTouches%Within,esriSpatialRelWithin Spatial Relationship&quot; esriSpatialRelIntersects &quot;GUI OPTIONAL FLOAT arcgisonline_distance Distance&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_units Meters,esriSRUnit_Meter%Miles,esriSRUnit_StatuteMile%Feet,esriSRUnit_Foot%Kilometers,esriSRUnit_Kilometer%Nautical&lt;space&gt;Miles,esriSRUnit_NauticalMile%US&lt;space&gt;Nautical&lt;space&gt;Miles,esriSRUnit_USNauticalMile Units&quot; esriSRUnit_Meter "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="URL"
+#!   GENERATE_FME_BUILD_NUM="16716"
+#!   NAME="MapServer [ARCGISFEATURES] - Cadastre Address - In Locality of Perth"
+#!   COORDSYS=""
+#!   START_FEATURE=""
+#!   MIN_FEATURES=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcGIS Feature Service URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY ARCGISFEATURES_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ARCGISFEATURES"
+#!   DATASET="$(SourceDataset_ARCGISFEATURES_7)"
+#!   KEYWORD="ARCGISFEATURES_3"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="arcgisonline_type {FME_GEN_GEOMETRY} arcgisonline_sql_where_clause &quot;&quot; arcgisonline_input_geometry &quot;&quot; arcgisonline_input_geometry_type esriGeometryEnvelope arcgisonline_spatial_relationship esriSpatialRelIntersects arcgisonline_distance &quot;&quot; arcgisonline_units esriSRUnit_Meter"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle esriFieldTypeDouble multi_reader_type esriFieldTypeString(50) fme_text_string esriFieldTypeString(50) multi_reader_full_id esriFieldTypeInteger fme_fill_color esriFieldTypeString(50) fme_primary_axis esriFieldTypeDouble fme_basename esriFieldTypeString(50) fme_dataset esriFieldTypeString(50) fme_color esriFieldTypeString(50) fme_type esriFieldTypeString(50) fme_geometry fme_char(50) multi_reader_id esriFieldTypeInteger fme_secondary_axis esriFieldTypeDouble fme_text_size esriFieldTypeDouble multi_reader_keyword esriFieldTypeString(50) fme_start_angle esriFieldTypeDouble fme_feature_type esriFieldTypeString(50) fme_rotation esriFieldTypeDouble arcgisonline_type esriFieldTypeString(254)"
+#!   DEFLINE_PARMS="&quot;GUI NAMEDGROUP arcgisonline_reader_group arcgisonline_sql_where_clause%arcgisonline_input_geometry%arcgisonline_input_geometry_type%arcgisonline_spatial_relationship%arcgisonline_distance%arcgisonline_units Layer Settings&quot; &quot;&quot; &quot;GUI OPTIONAL STRING_ENCODED arcgisonline_sql_where_clause WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL STRING_ENCODED arcgisonline_input_geometry Input Geometry&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_input_geometry_type Envelope,esriGeometryEnvelope%Point,esriGeometryPoint%Polyline,esriGeometryPolyline%Polygon,esriGeometryPolygon%Multipoint,esriGeometryMultipoint Input Geometry Type&quot; esriGeometryEnvelope &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_spatial_relationship Intersects,esriSpatialRelIntersects%Contains,esriSpatialRelContains%Crosses,esriSpatialRelCrosses%Envelope&lt;space&gt;Intersects,esriSpatialRelEnvelopeIntersects%Index&lt;space&gt;Intersects,esriSpatialRelIndexIntersects%Overlaps,esriSpatialRelOverlaps%Touches,esriSpatialRelTouches%Within,esriSpatialRelWithin Spatial Relationship&quot; esriSpatialRelIntersects &quot;GUI OPTIONAL FLOAT arcgisonline_distance Distance&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_units Meters,esriSRUnit_Meter%Miles,esriSRUnit_StatuteMile%Feet,esriSRUnit_Foot%Kilometers,esriSRUnit_Kilometer%Nautical&lt;space&gt;Miles,esriSRUnit_NauticalMile%US&lt;space&gt;Nautical&lt;space&gt;Miles,esriSRUnit_USNauticalMile Units&quot; esriSRUnit_Meter "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="URL"
+#!   GENERATE_FME_BUILD_NUM="16716"
+#!   NAME="MapServer [ARCGISFEATURES] - Cadastre Address - Within 1km of Central Perth"
+#!   COORDSYS=""
+#!   START_FEATURE=""
+#!   MIN_FEATURES=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcGIS Feature Service URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY ARCGISFEATURES_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ARCGISFEATURES"
+#!   DATASET="$(SourceDataset_ARCGISFEATURES_6)"
+#!   KEYWORD="ARCGISFEATURES_4"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="arcgisonline_type {FME_GEN_GEOMETRY} arcgisonline_sql_where_clause &quot;&quot; arcgisonline_input_geometry &quot;&quot; arcgisonline_input_geometry_type esriGeometryEnvelope arcgisonline_spatial_relationship esriSpatialRelIntersects arcgisonline_distance &quot;&quot; arcgisonline_units esriSRUnit_Meter"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_sweep_angle esriFieldTypeDouble multi_reader_type esriFieldTypeString(50) fme_text_string esriFieldTypeString(50) multi_reader_full_id esriFieldTypeInteger fme_fill_color esriFieldTypeString(50) fme_primary_axis esriFieldTypeDouble fme_basename esriFieldTypeString(50) fme_dataset esriFieldTypeString(50) fme_color esriFieldTypeString(50) fme_type esriFieldTypeString(50) fme_geometry fme_char(50) multi_reader_id esriFieldTypeInteger fme_secondary_axis esriFieldTypeDouble fme_text_size esriFieldTypeDouble multi_reader_keyword esriFieldTypeString(50) fme_start_angle esriFieldTypeDouble fme_feature_type esriFieldTypeString(50) fme_rotation esriFieldTypeDouble arcgisonline_type esriFieldTypeString(254)"
+#!   DEFLINE_PARMS="&quot;GUI NAMEDGROUP arcgisonline_reader_group arcgisonline_sql_where_clause%arcgisonline_input_geometry%arcgisonline_input_geometry_type%arcgisonline_spatial_relationship%arcgisonline_distance%arcgisonline_units Layer Settings&quot; &quot;&quot; &quot;GUI OPTIONAL STRING_ENCODED arcgisonline_sql_where_clause WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL STRING_ENCODED arcgisonline_input_geometry Input Geometry&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_input_geometry_type Envelope,esriGeometryEnvelope%Point,esriGeometryPoint%Polyline,esriGeometryPolyline%Polygon,esriGeometryPolygon%Multipoint,esriGeometryMultipoint Input Geometry Type&quot; esriGeometryEnvelope &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_spatial_relationship Intersects,esriSpatialRelIntersects%Contains,esriSpatialRelContains%Crosses,esriSpatialRelCrosses%Envelope&lt;space&gt;Intersects,esriSpatialRelEnvelopeIntersects%Index&lt;space&gt;Intersects,esriSpatialRelIndexIntersects%Overlaps,esriSpatialRelOverlaps%Touches,esriSpatialRelTouches%Within,esriSpatialRelWithin Spatial Relationship&quot; esriSpatialRelIntersects &quot;GUI OPTIONAL FLOAT arcgisonline_distance Distance&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE_ENCODED arcgisonline_units Meters,esriSRUnit_Meter%Miles,esriSRUnit_StatuteMile%Feet,esriSRUnit_Foot%Kilometers,esriSRUnit_Kilometer%Nautical&lt;space&gt;Miles,esriSRUnit_NauticalMile%US&lt;space&gt;Nautical&lt;space&gt;Miles,esriSRUnit_USNauticalMile Units&quot; esriSRUnit_Meter "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="URL"
+#!   GENERATE_FME_BUILD_NUM="16716"
+#!   NAME="MapServer [ARCGISFEATURES] - Cadastre Address - Within a Bounding Box"
+#!   COORDSYS="EPSG:3857"
+#!   START_FEATURE=""
+#!   MIN_FEATURES=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcGIS Feature Service URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY ARCGISFEATURES_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeInteger"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeInteger"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeInteger"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeInteger"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeSmallInteger"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeInteger"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeSmallInteger"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeSingle"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeDouble"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeDate"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeDate"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeDate"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeString"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeOID"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeDouble"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeSmallInteger"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeGUID(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="esriFieldTypeGlobalID(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ARCGISFEATURES"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Cadastre Address (LGATE-002)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="1"
+#!   FEAT_GEOMTYPE="arcgisonline_polygon"
+#!   POSITION="514.004 -522.505"
+#!   BOUNDING_RECT="514.004 -522.505 737.008 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ARCGISFEATURES_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="oid" ATTR_TYPE="esriFieldTypeOID" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ogc_fid" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="land_id__number" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usage_code" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="view_scale" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from_prefix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from_suffix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_type_label" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to_prefix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to_suffix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_name" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_type" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_direction" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="locality_name" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="row_id" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usage_description" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="cad_eas" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_reader_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_input_geometry_type" PARM_VALUE="esriGeometryEnvelope"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_distance" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_sql_where_clause" PARM_VALUE="locality_name&lt;space&gt;=&lt;space&gt;&lt;apos&gt;PERTH&lt;apos&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_spatial_relationship" PARM_VALUE="esriSpatialRelIntersects"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_units" PARM_VALUE="esriSRUnit_Meter"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_input_geometry" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Cadastre Address (LGATE-002)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="arcgisonline_polygon"
+#!   POSITION="514.004 -1601.01"
+#!   BOUNDING_RECT="514.004 -1601.01 737.008 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ARCGISFEATURES_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="oid" ATTR_TYPE="esriFieldTypeOID" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ogc_fid" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="land_id__number" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usage_code" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="view_scale" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from_prefix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from_suffix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_type_label" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to_prefix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to_suffix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_name" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_type" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_direction" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="locality_name" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="row_id" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usage_description" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="cad_eas" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_reader_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_input_geometry_type" PARM_VALUE="esriGeometryPoint"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_distance" PARM_VALUE="1000"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_sql_where_clause" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_spatial_relationship" PARM_VALUE="esriSpatialRelContains"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_units" PARM_VALUE="esriSRUnit_Meter"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_input_geometry" PARM_VALUE="1.2897538370833986E7&lt;comma&gt;-3757521.592059901"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Cadastre Address (LGATE-002)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="7"
+#!   FEAT_GEOMTYPE="arcgisonline_polygon"
+#!   POSITION="514.004 -2363.02"
+#!   BOUNDING_RECT="514.004 -2363.02 731.008 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ARCGISFEATURES_4"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="oid" ATTR_TYPE="esriFieldTypeOID" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ogc_fid" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="land_id__number" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usage_code" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="view_scale" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from_prefix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_from_suffix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_type_label" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to_prefix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number_to_suffix" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_name" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_type" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="road_direction" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="locality_name" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="row_id" ATTR_TYPE="esriFieldTypeInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="usage_description" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="cad_eas" ATTR_TYPE="esriFieldTypeString(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_reader_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_input_geometry_type" PARM_VALUE="esriGeometryEnvelope"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_distance" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_sql_where_clause" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_spatial_relationship" PARM_VALUE="esriSpatialRelIntersects"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_units" PARM_VALUE="esriSRUnit_Meter"/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_input_geometry" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT SourceDataset_ARCGISFEATURES Host:"
+#!   DEFAULT_VALUE="https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT SourceDataset_ARCGISFEATURES_7 Host:"
+#!   DEFAULT_VALUE="https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT SourceDataset_ARCGISFEATURES_6 Host:"
+#!   DEFAULT_VALUE="https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="8"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Download features where the &apos;Locality&apos; field is &apos;Perth&apos;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Reader Parameters -&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Features Per Request: Defaults to 1,000. May be set as high as the service will allow - typically 100,000.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Feature Type Format Parameters -&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- WHERE Clause: PERTH&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="237.002 -52.0005"
+#!   TOP_LEFT="237.002 -52.0005"
+#!   BOTTOM_RIGHT="1605.02 -442.004"
+#!   BOUNDING_RECT="237.002 -52.0005 1368.01 390.004"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="1"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="9"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Download features within a given Bounding Box&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Reader Parameters -&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Features Per Request: Defaults to 1,000. May be set as high as the service will allow - typically 100,000.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Search Envelope: MINX, MINY, MAXX, MAXY&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Search Envelope: Coordinate System&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Coordinate System (MUST be set if the Search Envelope CRS is set.)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="235.502 -1822.02"
+#!   TOP_LEFT="235.502 -1822.02"
+#!   BOTTOM_RIGHT="1577.52 -1972.02"
+#!   BOUNDING_RECT="235.502 -1822.02 1342.01 150.001"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="7"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="10"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Download features within 1km of Central Perth&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Reader Parameters -&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Features Per Request: Defaults to 1,000. May be set as high as the service will allow - typically 100,000.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Feature Type Format Parameters -&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Input Geometry: X,Y (In the coordinate system of the dataset - usually Web Mercator.)&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Input Geometry Type: Point&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Spatial Relationship: Contains&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Distance: 1000&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Units: Metres&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;NB: &lt;/span&gt;Envelope, Polyline, Polygon, and MultiPoint are also accepted for &apos;Input Geometry Type&apos;. &apos;Input Geometry&apos; must always be formatted as ESRI JSON.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="237.002 -703.007"
+#!   TOP_LEFT="237.002 -703.007"
+#!   BOTTOM_RIGHT="1587.02 -1093.01"
+#!   BOUNDING_RECT="237.002 -703.007 1350.01 390.004"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="5"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Inspector"
+#!   VERSION="3"
+#!   POSITION="2595.03 -1590.52"
+#!   BOUNDING_RECT="2595.03 -1590.52 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16716"
+#! >
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Inspector"/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_ARCGISFEATURES_1,ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_1,ARCGISFEATURES_IN_USER_ARCGISFEATURES_1,ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_1,ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_1,ARCGISFEATURES_IN_AGOL_ADV_PARM_GROUP_ARCGISFEATURES_1,ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_1,ARCGISFEATURES_IN_EXPOSE_ATTRS_GROUP_ARCGISFEATURES_1,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_1,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_1,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_1,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_1,ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_1,SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_1,SourceDataset_ARCGISFEATURES_3,ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_3,ARCGISFEATURES_IN_USER_ARCGISFEATURES_3,ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_3,ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_3,ARCGISFEATURES_IN_AGOL_ADV_PARM_GROUP_ARCGISFEATURES_3,ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_3,ARCGISFEATURES_IN_EXPOSE_ATTRS_GROUP_ARCGISFEATURES_3,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_3,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_3,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_3,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_3,ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_3,SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_3,SourceDataset_ARCGISFEATURES_4,ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_4,ARCGISFEATURES_IN_USER_ARCGISFEATURES_4,ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_4,ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_4,ARCGISFEATURES_IN_AGOL_ADV_PARM_GROUP_ARCGISFEATURES_4,ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_4,ARCGISFEATURES_IN_EXPOSE_ATTRS_GROUP_ARCGISFEATURES_4,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_4,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_4,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_4,ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_4,ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_4,SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_4
+DEFAULT_MACRO SourceDataset_ARCGISFEATURES https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer
+GUI TEXT SourceDataset_ARCGISFEATURES Host:
+DEFAULT_MACRO SourceDataset_ARCGISFEATURES_7 https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer
+GUI TEXT SourceDataset_ARCGISFEATURES_7 Host:
+DEFAULT_MACRO SourceDataset_ARCGISFEATURES_6 https://services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer
+GUI TEXT SourceDataset_ARCGISFEATURES_6 Host:
+INCLUDE [ if {{$(SourceDataset_ARCGISFEATURES)} == {}} { puts_real {Parameter 'SourceDataset_ARCGISFEATURES' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ARCGISFEATURES_7)} == {}} { puts_real {Parameter 'SourceDataset_ARCGISFEATURES_7' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ARCGISFEATURES_6)} == {}} { puts_real {Parameter 'SourceDataset_ARCGISFEATURES_6' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} NULL
+MULTI_READER_FORMAT{0} ARCGISFEATURES
+MULTI_READER_KEYWORD{0} ARCGISFEATURES_1
+MULTI_READER_GEN_DIRECTIVES{0} SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,ARCGISFEATURES_EXPOSE_FORMAT_ATTRS,,STANDALONE_FS,Yes,FEATURES_PER_REQUEST,10000,USE_SEARCH_ENVELOPE,NO,TOKEN,<lt>Unused<gt>,AGOL_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,_MERGE_SCHEMAS,YES,AUTH_TYPE,None,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,CLIP_TO_ENVELOPE,NO,TABLELIST,<quote>Cadastre<space>Address<space><openparen>LGATE-002<closeparen><quote>,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USER,<lt>Unused<gt>
+MULTI_READER_TYPE{1} ARCGISFEATURES
+MULTI_READER_KEYWORD{1} ARCGISFEATURES_3
+MULTI_READER_GEN_DIRECTIVES{1} SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,ARCGISFEATURES_EXPOSE_FORMAT_ATTRS,,STANDALONE_FS,Yes,FEATURES_PER_REQUEST,10000,USE_SEARCH_ENVELOPE,NO,TOKEN,<lt>Unused<gt>,AGOL_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,_MERGE_SCHEMAS,YES,AUTH_TYPE,None,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,CLIP_TO_ENVELOPE,NO,TABLELIST,<quote>Cadastre<space>Address<space><openparen>LGATE-002<closeparen><quote>,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USER,<lt>Unused<gt>
+MULTI_READER_TYPE{2} NULL
+MULTI_READER_FORMAT{2} ARCGISFEATURES
+MULTI_READER_KEYWORD{2} ARCGISFEATURES_4
+MULTI_READER_GEN_DIRECTIVES{2} SEARCH_ENVELOPE_MAXX,115.93065261840819,SEARCH_ENVELOPE_MAXY,-31.929874625779956,ARCGISFEATURES_EXPOSE_FORMAT_ATTRS,,STANDALONE_FS,Yes,FEATURES_PER_REQUEST,10000,USE_SEARCH_ENVELOPE,YES,TOKEN,<lt>Unused<gt>,AGOL_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,_MERGE_SCHEMAS,YES,AUTH_TYPE,None,SEARCH_ENVELOPE_MINX,115.8292007446289,SEARCH_ENVELOPE_MINY,-31.99584774425183,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,CLIP_TO_ENVELOPE,NO,TABLELIST,<quote>Cadastre<space>Address<space><openparen>LGATE-002<closeparen><quote>,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USER,<lt>Unused<gt>
+
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ARCGISFEATURES_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGISFEATURES ARCGISFEATURES_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ARCGISFEATURES_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGISFEATURES ARCGISFEATURES_1
+DEFAULT_MACRO SourceDataset_ARCGISFEATURES_1 $(SourceDataset_ARCGISFEATURES)
+GUI TEXT SourceDataset_ARCGISFEATURES_1 Host:
+DEFAULT_MACRO ARCGISFEATURES_IN_STANDALONE_FS_ARCGISFEATURES_1 Yes
+ARCGISFEATURES_1_STANDALONE_FS "$(ARCGISFEATURES_IN_STANDALONE_FS_ARCGISFEATURES_1)"
+DEFAULT_MACRO ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_1 None
+ARCGISFEATURES_1_AUTH_TYPE "$(ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_1 None,None,TOKEN,USER,PASSWORD%"Provide Token",provide_token,USER,PASSWORD%Basic,Basic,TOKEN%Digest,Digest,TOKEN%NTLM,NTLM,TOKEN%Kerberos,Kerberos,TOKEN,USER,PASSWORD Authentication Type:
+DEFAULT_MACRO ARCGISFEATURES_IN_USER_ARCGISFEATURES_1 <Unused>
+ARCGISFEATURES_1_USER "$(ARCGISFEATURES_IN_USER_ARCGISFEATURES_1)"
+GUI STRING_ENCODED ARCGISFEATURES_IN_USER_ARCGISFEATURES_1 User:
+DEFAULT_MACRO ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_1 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszsRNVplu1YEC1HpDr3v+oKQiGEQe4i19bmrkE8Mr2dmHTrF/mWFAvD+DiuFq5YfbbcrSy8HZLCWwUds+F4zyInFylEHSI5fN3V+JZzi2NmhqSxW3bM9LthJx3Jp6Gelm8jm5+9xATkXMjsv7F1LSaJFbRQOOPRzKe4bd7Kv/3qJhKiXHJ6hiygdEq68AYlUXjFvL9NgYp5XLAEAy1eb3u+bYxJZdVXb9hpqqgQskprmVRlY8M7ozO4PDE4dQ24ZCqFcoFCH0DkZ8+2nq5xjlrerFk35D0a8uwnJtyhNWQUR3EsY2pTjmevf6RQa3/abkWlhqz4bJybh/or8YCK5sjxS/Z7NZE0Bro)
+ARCGISFEATURES_1_PASSWORD "$(ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_1)"
+GUI PASSWORD_ENCODED ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_1 Password:
+DEFAULT_MACRO ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_1 <Unused>
+ARCGISFEATURES_1_TOKEN "$(ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_1)"
+GUI STRING_ENCODED ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_1 Token:
+GUI DISCLOSUREGROUP ARCGISFEATURES_IN_AGOL_ADV_PARM_GROUP_ARCGISFEATURES_1 FEATURES_PER_REQUEST Advanced
+DEFAULT_MACRO ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_1 10000
+ARCGISFEATURES_1_FEATURES_PER_REQUEST "$(ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_1)"
+GUI INTEGER ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_1 Features Per Request:
+GUI DISCLOSUREGROUP ARCGISFEATURES_IN_EXPOSE_ATTRS_GROUP_ARCGISFEATURES_1 ARCGISFEATURES_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_1 0
+ARCGISFEATURES_1_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_1)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_1 0
+ARCGISFEATURES_1_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_1)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_1 0
+ARCGISFEATURES_1_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_1)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_1 0
+ARCGISFEATURES_1_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_1)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_1 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_1 NO
+ARCGISFEATURES_1_CLIP_TO_ENVELOPE "$(ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_1)"
+GUI OPTIONAL CHECKBOX ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ARCGISFEATURES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ARCGISFEATURES_1 Yes
+ARCGISFEATURES_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ARCGISFEATURES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ARCGISFEATURES_1)"
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_ATTRIBUTE_READING_ARCGISFEATURES_1 ALL
+ARCGISFEATURES_1_ATTRIBUTE_READING "$(ARCGISFEATURES_IN_ATTRIBUTE_READING_ARCGISFEATURES_1)"
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_1 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_1 Search Envelope Coordinate System:
+ARCGISFEATURES_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_1)"
+# ===========================================================================
+ARCGISFEATURES_1_DATASET "$(SourceDataset_ARCGISFEATURES_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ARCGISFEATURES_3"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGISFEATURES ARCGISFEATURES_3
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ARCGISFEATURES_3 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGISFEATURES ARCGISFEATURES_3
+DEFAULT_MACRO SourceDataset_ARCGISFEATURES_3 $(SourceDataset_ARCGISFEATURES_7)
+GUI TEXT SourceDataset_ARCGISFEATURES_3 Host:
+DEFAULT_MACRO ARCGISFEATURES_IN_STANDALONE_FS_ARCGISFEATURES_3 Yes
+ARCGISFEATURES_3_STANDALONE_FS "$(ARCGISFEATURES_IN_STANDALONE_FS_ARCGISFEATURES_3)"
+DEFAULT_MACRO ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_3 None
+ARCGISFEATURES_3_AUTH_TYPE "$(ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_3)"
+GUI ACTIVECHOICE_LOOKUP ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_3 None,None,TOKEN,USER,PASSWORD%"Provide Token",provide_token,USER,PASSWORD%Basic,Basic,TOKEN%Digest,Digest,TOKEN%NTLM,NTLM,TOKEN%Kerberos,Kerberos,TOKEN,USER,PASSWORD Authentication Type:
+DEFAULT_MACRO ARCGISFEATURES_IN_USER_ARCGISFEATURES_3 <Unused>
+ARCGISFEATURES_3_USER "$(ARCGISFEATURES_IN_USER_ARCGISFEATURES_3)"
+GUI STRING_ENCODED ARCGISFEATURES_IN_USER_ARCGISFEATURES_3 User:
+DEFAULT_MACRO ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_3 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszjEXIMUZL6hJmSxeOXouZZ3T+bkz0et3afa+lbTe1qcQSC0QRGH4+0tkcVv6dNwpMOE1Q8UajWrT0qI8jLPIKmKWl2Bx5V5PO6vqlp4S7mes5u4Y0eyJz5T61tZY8Z+TOCCmf9W/w+u1NIxCKTSBOyS0Yv1oUVCwFV+D/H1rFPdBZpsqt7ZPzLVEIUaDxmci5tst91aj48j5ITjhYHbKhZxrLZFrd38Z783lddHU+KCvvmVkM/4uaxIdoegA5W49Ws+eO5at9WKy/nv0VnWWR6xXrwO0vnDjKAkvfbPylMFPgrEe0QdQ3E33IJFeKes1f+QpqWNz+hYpB0owCPXL2GdgYJNg0itkR)
+ARCGISFEATURES_3_PASSWORD "$(ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_3)"
+GUI PASSWORD_ENCODED ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_3 Password:
+DEFAULT_MACRO ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_3 <Unused>
+ARCGISFEATURES_3_TOKEN "$(ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_3)"
+GUI STRING_ENCODED ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_3 Token:
+GUI DISCLOSUREGROUP ARCGISFEATURES_IN_AGOL_ADV_PARM_GROUP_ARCGISFEATURES_3 FEATURES_PER_REQUEST Advanced
+DEFAULT_MACRO ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_3 10000
+ARCGISFEATURES_3_FEATURES_PER_REQUEST "$(ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_3)"
+GUI INTEGER ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_3 Features Per Request:
+GUI DISCLOSUREGROUP ARCGISFEATURES_IN_EXPOSE_ATTRS_GROUP_ARCGISFEATURES_3 ARCGISFEATURES_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_3 0
+ARCGISFEATURES_3_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_3)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_3 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_3 0
+ARCGISFEATURES_3_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_3)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_3 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_3 0
+ARCGISFEATURES_3_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_3)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_3 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_3 0
+ARCGISFEATURES_3_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_3)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_3 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_3 NO
+ARCGISFEATURES_3_CLIP_TO_ENVELOPE "$(ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_3)"
+GUI OPTIONAL CHECKBOX ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_3 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ARCGISFEATURES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ARCGISFEATURES_3 Yes
+ARCGISFEATURES_3_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ARCGISFEATURES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ARCGISFEATURES_3)"
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_ATTRIBUTE_READING_ARCGISFEATURES_3 ALL
+ARCGISFEATURES_3_ATTRIBUTE_READING "$(ARCGISFEATURES_IN_ATTRIBUTE_READING_ARCGISFEATURES_3)"
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_3 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_3 Search Envelope Coordinate System:
+ARCGISFEATURES_3_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_3)"
+# ===========================================================================
+ARCGISFEATURES_3_DATASET "$(SourceDataset_ARCGISFEATURES_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ARCGISFEATURES_4"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGISFEATURES ARCGISFEATURES_4
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ARCGISFEATURES_4 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGISFEATURES ARCGISFEATURES_4
+DEFAULT_MACRO SourceDataset_ARCGISFEATURES_4 $(SourceDataset_ARCGISFEATURES_6)
+GUI TEXT SourceDataset_ARCGISFEATURES_4 Host:
+DEFAULT_MACRO ARCGISFEATURES_IN_STANDALONE_FS_ARCGISFEATURES_4 Yes
+ARCGISFEATURES_4_STANDALONE_FS "$(ARCGISFEATURES_IN_STANDALONE_FS_ARCGISFEATURES_4)"
+DEFAULT_MACRO ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_4 None
+ARCGISFEATURES_4_AUTH_TYPE "$(ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_4)"
+GUI ACTIVECHOICE_LOOKUP ARCGISFEATURES_IN_AUTH_TYPE_ARCGISFEATURES_4 None,None,TOKEN,USER,PASSWORD%"Provide Token",provide_token,USER,PASSWORD%Basic,Basic,TOKEN%Digest,Digest,TOKEN%NTLM,NTLM,TOKEN%Kerberos,Kerberos,TOKEN,USER,PASSWORD Authentication Type:
+DEFAULT_MACRO ARCGISFEATURES_IN_USER_ARCGISFEATURES_4 <Unused>
+ARCGISFEATURES_4_USER "$(ARCGISFEATURES_IN_USER_ARCGISFEATURES_4)"
+GUI STRING_ENCODED ARCGISFEATURES_IN_USER_ARCGISFEATURES_4 User:
+DEFAULT_MACRO ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_4 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszBsH1ZsJNae+fdDwKXodgBLlEU4qgGjUZWFD4McIIzGkH+GKXz5di2v+hZM1DxPOI5oiGm1S7BBkPdmbVSGWqI0dxJeTLIitNFJKf4AGnDJ6Gjebxvh+dAQLcSH8UAgTEDI8j232lkappA7YtqfAYZ5vizc46VmVZKPG7Bqp8jXGNtXKkriwqtC6Sff1sYn7gC1tNEcG1fOooQDbQwawdHH66wcRd+EtHUzAhCuYg7ju3MYUkZRtlbMKuTPzhlysxKVK1Yqec3vUKeC+p3lTGsvKbPQYjbr6YUlX7aT6jqE04dU3FSWN5PILbq9Za6aVDnGyJ9RpNh734MOZ8141Zmc9oHYrlalUk)
+ARCGISFEATURES_4_PASSWORD "$(ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_4)"
+GUI PASSWORD_ENCODED ARCGISFEATURES_IN_PASSWORD_ARCGISFEATURES_4 Password:
+DEFAULT_MACRO ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_4 <Unused>
+ARCGISFEATURES_4_TOKEN "$(ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_4)"
+GUI STRING_ENCODED ARCGISFEATURES_IN_TOKEN_ARCGISFEATURES_4 Token:
+GUI DISCLOSUREGROUP ARCGISFEATURES_IN_AGOL_ADV_PARM_GROUP_ARCGISFEATURES_4 FEATURES_PER_REQUEST Advanced
+DEFAULT_MACRO ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_4 10000
+ARCGISFEATURES_4_FEATURES_PER_REQUEST "$(ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_4)"
+GUI INTEGER ARCGISFEATURES_IN_FEATURES_PER_REQUEST_ARCGISFEATURES_4 Features Per Request:
+GUI DISCLOSUREGROUP ARCGISFEATURES_IN_EXPOSE_ATTRS_GROUP_ARCGISFEATURES_4 ARCGISFEATURES_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_4 115.8292007446289
+ARCGISFEATURES_4_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_4)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINX_ARCGISFEATURES_4 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_4 -31.99584774425183
+ARCGISFEATURES_4_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_4)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MINY_ARCGISFEATURES_4 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_4 115.93065261840819
+ARCGISFEATURES_4_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_4)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXX_ARCGISFEATURES_4 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_4 -31.929874625779956
+ARCGISFEATURES_4_SEARCH_ENVELOPE "$(ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_4)"
+GUI OPTIONAL FLOAT ARCGISFEATURES_IN_SEARCH_ENVELOPE_MAXY_ARCGISFEATURES_4 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_4 NO
+ARCGISFEATURES_4_CLIP_TO_ENVELOPE "$(ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_4)"
+GUI OPTIONAL CHECKBOX ARCGISFEATURES_IN_CLIP_TO_ENVELOPE_ARCGISFEATURES_4 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ARCGISFEATURES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ARCGISFEATURES_4 Yes
+ARCGISFEATURES_4_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ARCGISFEATURES_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ARCGISFEATURES_4)"
+# ===========================================================================
+DEFAULT_MACRO ARCGISFEATURES_IN_ATTRIBUTE_READING_ARCGISFEATURES_4 ALL
+ARCGISFEATURES_4_ATTRIBUTE_READING "$(ARCGISFEATURES_IN_ATTRIBUTE_READING_ARCGISFEATURES_4)"
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_4 EPSG:4283
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_4 Search Envelope Coordinate System:
+ARCGISFEATURES_4_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGISFEATURES_4)"
+# ===========================================================================
+ARCGISFEATURES_4_DATASET "$(SourceDataset_ARCGISFEATURES_4)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)ESRI REST Cad Address Public Example.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_ARCGISFEATURES_1 ARCGISFEATURES_1
+DEFAULT_MACRO DATASET_KEYWORD_ARCGISFEATURES_3 ARCGISFEATURES_3
+DEFAULT_MACRO DATASET_KEYWORD_ARCGISFEATURES_4 ARCGISFEATURES_4
+# -------------------------------------------------------------------------
+
+ARCGISFEATURES_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ARCGISFEATURES_3_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ARCGISFEATURES_4_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ARCGISFEATURES_4_COORDINATE_SYSTEM EPSG:3857
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME ESRI REST Cad Address Public Example
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ARCGISFEATURES "ARCGISFEATURES_3::Cadastre Address (LGATE-002)" multi_reader_keyword,$(DATASET_KEYWORD_ARCGISFEATURES_3) TO FME_GENERIC "::Cadastre Address (LGATE-002)" ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ARCGISFEATURES_1_MERGE_DEF "ARCGISFEATURES_1::Cadastre Address (LGATE-002)" EXACT Cadastre<space>Address<space><openparen>LGATE-002<closeparen>
+ARCGISFEATURES_3_MERGE_DEF "ARCGISFEATURES_3::Cadastre Address (LGATE-002)" EXACT Cadastre<space>Address<space><openparen>LGATE-002<closeparen> DEFLINE arcgisonline_type,arcgisonline_polygon,arcgisonline_sql_where_clause,,arcgisonline_input_geometry,1.2897538370833986E7<lt>comma<gt>-3757521.592059901,arcgisonline_input_geometry_type,esriGeometryPoint,arcgisonline_spatial_relationship,esriSpatialRelContains,arcgisonline_distance,1000,arcgisonline_units,esriSRUnit_Meter,oid,esriFieldTypeOID,ogc_fid,esriFieldTypeInteger,land_id__number,esriFieldTypeInteger,usage_code,esriFieldTypeInteger,view_scale,esriFieldTypeString<openparen>255<closeparen>,number_from_prefix,esriFieldTypeString<openparen>255<closeparen>,number_from,esriFieldTypeInteger,number_from_suffix,esriFieldTypeString<openparen>255<closeparen>,number_type_label,esriFieldTypeString<openparen>255<closeparen>,number_to_prefix,esriFieldTypeString<openparen>255<closeparen>,number_to,esriFieldTypeInteger,number_to_suffix,esriFieldTypeString<openparen>255<closeparen>,road_name,esriFieldTypeString<openparen>255<closeparen>,road_type,esriFieldTypeString<openparen>255<closeparen>,road_direction,esriFieldTypeString<openparen>255<closeparen>,locality_name,esriFieldTypeString<openparen>255<closeparen>,row_id,esriFieldTypeInteger,usage_description,esriFieldTypeString<openparen>255<closeparen>,cad_eas,esriFieldTypeString<openparen>255<closeparen>
+ARCGISFEATURES_4_MERGE_DEF "ARCGISFEATURES_4::Cadastre Address (LGATE-002)" EXACT Cadastre<space>Address<space><openparen>LGATE-002<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Cadastre Address (LGATE-002) (ARCGISFEATURES_1) Splitter"    INPUT FEATURE_TYPE "Cadastre Address (LGATE-002)"      multi_reader_keyword $(DATASET_KEYWORD_ARCGISFEATURES_1)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Cadastre Address (LGATE-002) (ARCGISFEATURES_3) Splitter"    INPUT FEATURE_TYPE "Cadastre Address (LGATE-002)"      multi_reader_keyword $(DATASET_KEYWORD_ARCGISFEATURES_3)    OUTPUT FEATURE_TYPE "Cadastre Address (LGATE-002)_ARCGISFEATURES_3"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Cadastre Address (LGATE-002) (ARCGISFEATURES_4) Splitter"    INPUT FEATURE_TYPE "Cadastre Address (LGATE-002)"      multi_reader_keyword $(DATASET_KEYWORD_ARCGISFEATURES_4)
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {Inspector} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME Inspector_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME Inspector_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Inspector_FeatureDirector    INPUT  FEATURE_TYPE "Cadastre Address (LGATE-002)_ARCGISFEATURES_3"    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE Inspector___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE Inspector___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME Inspector___FeatureDirector1    INPUT FEATURE_TYPE Inspector___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE Inspector___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE Inspector___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Inspector_VectorSetterUpper    INPUT FEATURE_TYPE Inspector___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+
+Tcl2 proc Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Inspector___PointCloudThinner    INPUT FEATURE_TYPE Inspector___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_thinPointCloud")
+Tcl2 proc Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Inspector_RasterSetterUpper    INPUT FEATURE_TYPE Inspector___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+
+DEFAULT_MACRO Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_VIS_FEAT_TYPE Inspector$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Inspector_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Inspector_20bc95f0_66d4_11e7_8df7_60030891e65015_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA oid,varchar<openparen>255<closeparen>,ogc_fid,varchar<openparen>255<closeparen>,land_id__number,varchar<openparen>255<closeparen>,usage_code,varchar<openparen>255<closeparen>,view_scale,varchar<openparen>255<closeparen>,number_from_prefix,varchar<openparen>255<closeparen>,number_from,varchar<openparen>255<closeparen>,number_from_suffix,varchar<openparen>255<closeparen>,number_type_label,varchar<openparen>255<closeparen>,number_to_prefix,varchar<openparen>255<closeparen>,number_to,varchar<openparen>255<closeparen>,number_to_suffix,varchar<openparen>255<closeparen>,road_name,varchar<openparen>255<closeparen>,road_type,varchar<openparen>255<closeparen>,road_direction,varchar<openparen>255<closeparen>,locality_name,varchar<openparen>255<closeparen>,row_id,varchar<openparen>255<closeparen>,usage_description,varchar<openparen>255<closeparen>,cad_eas,varchar<openparen>255<closeparen>    MODE RECORD    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__

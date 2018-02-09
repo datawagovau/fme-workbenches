@@ -4,6 +4,10 @@ import shutil
 import zipfile
 import boto3
 
+#If using a proxy you may need to set the proxy environment variables 
+#os.environ["HTTP_PROXY"] = "http://proxy.test.wa.gov.au" 
+#os.environ["HTTPS_PROXY"] = "http://proxy.test.wa.gov.au"
+
 # fuction to upload your data to aws S3
 def UploadFile(source_file, bucket, bucket_key, aws_key, aws_secret):
     fname = str(source_file).split('\\')[-1:][0]
